@@ -1,0 +1,677 @@
+
+main.c:5:5: error: non-void function 'main' should return a value [-Wreturn-type]
+    return;
+    ^
+1 error generated.
+main.c:5:5: error: non-void function 'main' should return a value [-Wreturn-type]
+    return;
+    ^
+1 error generated.
+main.c:5:5: error: non-void function 'main' should return a value [-Wreturn-type]
+    return;
+    ^
+1 error generated.
+2022-12-15 17:31:47
+2022-12-15 17:32:07
+main.c:5:5: error: non-void function 'main' should return a value [-Wreturn-type]
+    return;
+    ^
+1 error generated.
+
+2022-12-15 17:32:25
+
+main.c:5:5: error: non-void function 'main' should return a value [-Wreturn-type]
+    return;
+    ^
+1 error generated.
+
+2022-12-15 17:32:36
+main.c:5:5: error: non-void function 'main' should return a value [-Wreturn-type]
+    return;
+    ^
+1 error generated.
+
+2022-12-15 17:35:09
+main.c:5:5: error: non-void function 'main' should return a value [-Wreturn-type]
+    return;
+    ^
+1 error generated.
+
+2022-12-15 17:35:19
+
+2022-12-15 17:40:53
+main.c:2:9: fatal error: 'GL/glut.h' file not found
+#include<GL/glut.h>
+        ^~~~~~~~~~~
+1 error generated.
+
+2022-12-15 17:41:32
+main.c:2:9: fatal error: 'GL/glut.h' file not found
+#include<GL/glut.h>
+        ^~~~~~~~~~~
+1 error generated.
+
+2022-12-15 17:42:25
+
+2022-12-15 17:46:03
+
+2022-12-15 17:47:08
+
+2022-12-15 17:47:46
+main.c:5:5: error: 'glutInit' is deprecated: first deprecated in macOS 10.9 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Werror,-Wdeprecated-declarations]
+    glutInit(&argc, argv);
+    ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h:431:22: note: 'glutInit' has been explicitly marked deprecated here
+extern void APIENTRY glutInit(int *argcp, char **argv) OPENGL_DEPRECATED(10_0, 10_9);
+                     ^
+main.c:6:5: error: 'glutInitWindowPosition' is deprecated: first deprecated in macOS 10.9 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Werror,-Wdeprecated-declarations]
+    glutInitWindowPosition(100,100);
+    ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h:436:22: note: 'glutInitWindowPosition' has been explicitly marked deprecated here
+extern void APIENTRY glutInitWindowPosition(int x, int y) OPENGL_DEPRECATED(10_0, 10_9);
+                     ^
+main.c:7:5: error: 'glutInitWindowSize' is deprecated: first deprecated in macOS 10.9 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Werror,-Wdeprecated-declarations]
+    glutInitWindowSize(500,500);
+    ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h:437:22: note: 'glutInitWindowSize' has been explicitly marked deprecated here
+extern void APIENTRY glutInitWindowSize(int width, int height) OPENGL_DEPRECATED(10_0, 10_9);
+                     ^
+main.c:8:5: error: 'glutCreateWindow' is deprecated: first deprecated in macOS 10.9 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Werror,-Wdeprecated-declarations]
+    glutCreateWindow( Hello World );
+    ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h:441:21: note: 'glutCreateWindow' has been explicitly marked deprecated here
+extern int APIENTRY glutCreateWindow(const char *title) OPENGL_DEPRECATED(10_0, 10_9);
+                    ^
+main.c:8:23: error: use of undeclared identifier 'Hello'; did you mean 'ftello'?
+    glutCreateWindow( Hello World );
+                      ^~~~~
+                      ftello
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/stdio.h:338:8: note: 'ftello' declared here
+off_t    ftello(FILE * __stream);
+         ^
+main.c:9:5: error: 'glutMainLoop' is deprecated: first deprecated in macOS 10.9 - OpenGL API deprecated. (Define GL_SILENCE_DEPRECATION to silence these warnings) [-Werror,-Wdeprecated-declarations]
+    glutMainLoop();
+    ^
+/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h:438:22: note: 'glutMainLoop' has been explicitly marked deprecated here
+extern void APIENTRY glutMainLoop(void) OPENGL_DEPRECATED(10_0, 10_9);
+                     ^
+6 errors generated.
+
+2022-12-15 17:58:28
+main.c:2:10: fatal error: 'GLFW/glfw3.h' file not found
+#include <GLFW/glfw3.h>
+         ^~~~~~~~~~~~~~
+1 error generated.
+
+2022-12-15 18:03:31
+main.c:2:10: fatal error: 'GLFW/glfw3.h' file not found
+#include <GLFW/glfw3.h>
+         ^~~~~~~~~~~~~~
+1 error generated.
+
+2022-12-15 18:05:16
+ld: library not found for -lglut
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+2022-12-15 18:05:55
+ld: library not found for -lglfw
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+2022-12-15 18:06:05
+Undefined symbols for architecture arm64:
+  "_glfwCreateWindow", referenced from:
+      _main in main-bf6793.o
+  "_glfwMakeContextCurrent", referenced from:
+      _main in main-bf6793.o
+  "_glfwTerminate", referenced from:
+      _main in main-bf6793.o
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+2022-12-15 18:06:53
+Undefined symbols for architecture arm64:
+  "_CFArrayAppendValue", referenced from:
+      _addJoystickElement in libglfw3.a(cocoa_joystick.m.o)
+  "_CFArrayApplyFunction", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+      _addJoystickElement in libglfw3.a(cocoa_joystick.m.o)
+  "_CFArrayCreateMutable", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+  "_CFArrayGetCount", referenced from:
+      __glfwSetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+      __glfwPlatformGetVideoModes in libglfw3.a(cocoa_monitor.m.o)
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+      _removeJoystick in libglfw3.a(cocoa_joystick.m.o)
+      _pollJoystickEvents in libglfw3.a(cocoa_joystick.m.o)
+      __glfwPlatformGetJoystickAxes in libglfw3.a(cocoa_joystick.m.o)
+      __glfwPlatformGetJoystickButtons in libglfw3.a(cocoa_joystick.m.o)
+      ...
+  "_CFArrayGetTypeID", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+      _addJoystickElement in libglfw3.a(cocoa_joystick.m.o)
+  "_CFArrayGetValueAtIndex", referenced from:
+      __glfwSetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+      __glfwPlatformGetVideoModes in libglfw3.a(cocoa_monitor.m.o)
+      _removeJoystick in libglfw3.a(cocoa_joystick.m.o)
+      _pollJoystickEvents in libglfw3.a(cocoa_joystick.m.o)
+  "_CFArrayRemoveAllValues", referenced from:
+      _removeJoystick in libglfw3.a(cocoa_joystick.m.o)
+  "_CFBundleCopyResourcesDirectoryURL", referenced from:
+      _changeToResourcesDirectory in libglfw3.a(cocoa_init.m.o)
+  "_CFBundleGetBundleWithIdentifier", referenced from:
+      __glfwInitContextAPI in libglfw3.a(nsgl_context.m.o)
+  "_CFBundleGetFunctionPointerForName", referenced from:
+      __glfwPlatformGetProcAddress in libglfw3.a(nsgl_context.m.o)
+  "_CFBundleGetMainBundle", referenced from:
+      _changeToResourcesDirectory in libglfw3.a(cocoa_init.m.o)
+  "_CFDictionaryGetTypeID", referenced from:
+      _getElementsCFArrayHandler in libglfw3.a(cocoa_joystick.m.o)
+  "_CFDictionaryGetValue", referenced from:
+      _getDisplayName in libglfw3.a(cocoa_monitor.m.o)
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+      _addJoystickElement in libglfw3.a(cocoa_joystick.m.o)
+  "_CFDictionaryGetValueIfPresent", referenced from:
+      _getDisplayName in libglfw3.a(cocoa_monitor.m.o)
+  "_CFGetTypeID", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+      _getElementsCFArrayHandler in libglfw3.a(cocoa_joystick.m.o)
+      _addJoystickElement in libglfw3.a(cocoa_joystick.m.o)
+  "_CFNumberGetValue", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+      _addJoystickElement in libglfw3.a(cocoa_joystick.m.o)
+  "_CFRelease", referenced from:
+      __glfwPlatformGetProcAddress in libglfw3.a(nsgl_context.m.o)
+      __glfwSetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+      _modeIsGood in libglfw3.a(cocoa_monitor.m.o)
+      _getDisplayName in libglfw3.a(cocoa_monitor.m.o)
+      __glfwPlatformGetVideoModes in libglfw3.a(cocoa_monitor.m.o)
+      _vidmodeFromCGDisplayMode in libglfw3.a(cocoa_monitor.m.o)
+      _changeToResourcesDirectory in libglfw3.a(cocoa_init.m.o)
+      ...
+  "_CFStringCompare", referenced from:
+      __glfwSetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+      _modeIsGood in libglfw3.a(cocoa_monitor.m.o)
+      _vidmodeFromCGDisplayMode in libglfw3.a(cocoa_monitor.m.o)
+      _changeToResourcesDirectory in libglfw3.a(cocoa_init.m.o)
+  "_CFStringCreateWithCString", referenced from:
+      __glfwPlatformGetProcAddress in libglfw3.a(nsgl_context.m.o)
+  "_CFStringGetCString", referenced from:
+      _getDisplayName in libglfw3.a(cocoa_monitor.m.o)
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+  "_CFStringGetLength", referenced from:
+      _getDisplayName in libglfw3.a(cocoa_monitor.m.o)
+  "_CFStringGetMaximumSizeForEncoding", referenced from:
+      _getDisplayName in libglfw3.a(cocoa_monitor.m.o)
+  "_CFURLCopyLastPathComponent", referenced from:
+      _changeToResourcesDirectory in libglfw3.a(cocoa_init.m.o)
+  "_CFURLGetFileSystemRepresentation", referenced from:
+      _changeToResourcesDirectory in libglfw3.a(cocoa_init.m.o)
+  "_CFUUIDGetConstantUUIDWithBytes", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+  "_CFUUIDGetUUIDBytes", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+  "_CGAcquireDisplayFadeReservation", referenced from:
+      _beginFadeReservation in libglfw3.a(cocoa_monitor.m.o)
+  "_CGAssociateMouseAndMouseCursorPosition", referenced from:
+      __glfwPlatformSetCursorMode in libglfw3.a(cocoa_window.m.o)
+  "_CGDisplayBounds", referenced from:
+      _transformY in libglfw3.a(cocoa_window.m.o)
+      __glfwPlatformGetMonitorPos in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayCapture", referenced from:
+      __glfwSetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayCopyAllDisplayModes", referenced from:
+      __glfwSetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+      __glfwPlatformGetVideoModes in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayCopyDisplayMode", referenced from:
+      __glfwSetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+      __glfwPlatformGetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayFade", referenced from:
+      _beginFadeReservation in libglfw3.a(cocoa_monitor.m.o)
+      _endFadeReservation in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayGammaTableCapacity", referenced from:
+      __glfwPlatformGetGammaRamp in libglfw3.a(cocoa_gamma.c.o)
+  "_CGDisplayIOServicePort", referenced from:
+      _getDisplayName in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayIsMain", referenced from:
+      __glfwPlatformGetMonitors in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayModeCopyPixelEncoding", referenced from:
+      __glfwSetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+      _modeIsGood in libglfw3.a(cocoa_monitor.m.o)
+      _vidmodeFromCGDisplayMode in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayModeGetHeight", referenced from:
+      __glfwSetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+      _vidmodeFromCGDisplayMode in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayModeGetIOFlags", referenced from:
+      _modeIsGood in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayModeGetRefreshRate", referenced from:
+      __glfwSetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+      _vidmodeFromCGDisplayMode in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayModeGetWidth", referenced from:
+      __glfwSetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+      _vidmodeFromCGDisplayMode in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayModeRelease", referenced from:
+      __glfwPlatformGetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayMoveCursorToPoint", referenced from:
+      __glfwPlatformSetCursorPos in libglfw3.a(cocoa_window.m.o)
+  "_CGDisplayRelease", referenced from:
+      __glfwRestoreVideoMode in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplayScreenSize", referenced from:
+      __glfwPlatformGetMonitors in libglfw3.a(cocoa_monitor.m.o)
+  "_CGDisplaySetDisplayMode", referenced from:
+      __glfwSetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+      __glfwRestoreVideoMode in libglfw3.a(cocoa_monitor.m.o)
+  "_CGEventSourceCreate", referenced from:
+      __glfwPlatformInit in libglfw3.a(cocoa_init.m.o)
+  "_CGEventSourceSetLocalEventsSuppressionInterval", referenced from:
+      __glfwPlatformInit in libglfw3.a(cocoa_init.m.o)
+  "_CGGetActiveDisplayList", referenced from:
+      __glfwPlatformGetMonitors in libglfw3.a(cocoa_monitor.m.o)
+  "_CGGetDisplayTransferByTable", referenced from:
+      __glfwPlatformGetGammaRamp in libglfw3.a(cocoa_gamma.c.o)
+  "_CGMainDisplayID", referenced from:
+      _transformY in libglfw3.a(cocoa_window.m.o)
+  "_CGReleaseDisplayFadeReservation", referenced from:
+      _endFadeReservation in libglfw3.a(cocoa_monitor.m.o)
+  "_CGSetDisplayTransferByTable", referenced from:
+      __glfwPlatformSetGammaRamp in libglfw3.a(cocoa_gamma.c.o)
+  "_CGWarpMouseCursorPosition", referenced from:
+      __glfwPlatformSetCursorPos in libglfw3.a(cocoa_window.m.o)
+  "_CVDisplayLinkCreateWithCGDisplay", referenced from:
+      __glfwPlatformGetVideoModes in libglfw3.a(cocoa_monitor.m.o)
+      __glfwPlatformGetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+  "_CVDisplayLinkGetNominalOutputVideoRefreshPeriod", referenced from:
+      _vidmodeFromCGDisplayMode in libglfw3.a(cocoa_monitor.m.o)
+  "_CVDisplayLinkRelease", referenced from:
+      __glfwPlatformGetVideoModes in libglfw3.a(cocoa_monitor.m.o)
+      __glfwPlatformGetVideoMode in libglfw3.a(cocoa_monitor.m.o)
+  "_IOCreatePlugInInterfaceForService", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+  "_IODisplayCreateInfoDictionary", referenced from:
+      _getDisplayName in libglfw3.a(cocoa_monitor.m.o)
+  "_IOIteratorNext", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+  "_IOMasterPort", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+  "_IORegistryEntryCreateCFProperties", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+  "_IOServiceGetMatchingServices", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+  "_IOServiceMatching", referenced from:
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+  "_NSApp", referenced from:
+      __glfwPlatformCreateWindow in libglfw3.a(cocoa_window.m.o)
+      _initializeAppKit in libglfw3.a(cocoa_window.m.o)
+      __glfwPlatformShowWindow in libglfw3.a(cocoa_window.m.o)
+      __glfwPlatformPollEvents in libglfw3.a(cocoa_window.m.o)
+      __glfwPlatformWaitEvents in libglfw3.a(cocoa_window.m.o)
+      _createMenuBar in libglfw3.a(cocoa_window.m.o)
+      __glfwPlatformTerminate in libglfw3.a(cocoa_init.m.o)
+      ...
+  "_NSAppKitVersionNumber", referenced from:
+      _convertRectToBacking in libglfw3.a(cocoa_window.m.o)
+      -[GLFWContentView scrollWheel:] in libglfw3.a(cocoa_window.m.o)
+      _createWindow in libglfw3.a(cocoa_window.m.o)
+      _createMenuBar in libglfw3.a(cocoa_window.m.o)
+  "_NSDefaultRunLoopMode", referenced from:
+      __glfwPlatformPollEvents in libglfw3.a(cocoa_window.m.o)
+      __glfwPlatformWaitEvents in libglfw3.a(cocoa_window.m.o)
+  "_NSFullScreenModeAllScreens", referenced from:
+      _enterFullscreenMode in libglfw3.a(cocoa_window.m.o)
+  "_NSSelectorFromString", referenced from:
+      _createMenuBar in libglfw3.a(cocoa_window.m.o)
+  "_NSZeroPoint", referenced from:
+      +[GLFWContentView initialize] in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSApplication", referenced from:
+      _OBJC_CLASS_$_GLFWApplication in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSAutoreleasePool", referenced from:
+      objc-class-ref in libglfw3.a(cocoa_window.m.o)
+      objc-class-ref in libglfw3.a(cocoa_init.m.o)
+  "_OBJC_CLASS_$_NSBundle", referenced from:
+      objc-class-ref in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSCursor", referenced from:
+      objc-class-ref in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSDate", referenced from:
+      objc-class-ref in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSDictionary", referenced from:
+      objc-class-ref in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSImage", referenced from:
+      objc-class-ref in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSMenu", referenced from:
+      objc-class-ref in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSMenuItem", referenced from:
+      objc-class-ref in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSNumber", referenced from:
+      objc-class-ref in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSObject", referenced from:
+      _OBJC_CLASS_$_GLFWWindowDelegate in libglfw3.a(cocoa_window.m.o)
+      _OBJC_CLASS_$_GLFWApplicationDelegate in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSOpenGLContext", referenced from:
+      objc-class-ref in libglfw3.a(nsgl_context.m.o)
+  "_OBJC_CLASS_$_NSOpenGLPixelFormat", referenced from:
+      objc-class-ref in libglfw3.a(nsgl_context.m.o)
+  "_OBJC_CLASS_$_NSScreen", referenced from:
+      objc-class-ref in libglfw3.a(cocoa_monitor.m.o)
+  "_OBJC_CLASS_$_NSString", referenced from:
+      objc-class-ref in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSTrackingArea", referenced from:
+      objc-class-ref in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSView", referenced from:
+      _OBJC_CLASS_$_GLFWContentView in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_CLASS_$_NSWindow", referenced from:
+      _OBJC_CLASS_$_GLFWWindow in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_METACLASS_$_NSApplication", referenced from:
+      _OBJC_METACLASS_$_GLFWApplication in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_METACLASS_$_NSObject", referenced from:
+      _OBJC_METACLASS_$_GLFWWindowDelegate in libglfw3.a(cocoa_window.m.o)
+      _OBJC_METACLASS_$_GLFWApplicationDelegate in libglfw3.a(cocoa_window.m.o)
+      _OBJC_METACLASS_$_GLFWContentView in libglfw3.a(cocoa_window.m.o)
+      _OBJC_METACLASS_$_GLFWWindow in libglfw3.a(cocoa_window.m.o)
+      _OBJC_METACLASS_$_GLFWApplication in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_METACLASS_$_NSView", referenced from:
+      _OBJC_METACLASS_$_GLFWContentView in libglfw3.a(cocoa_window.m.o)
+  "_OBJC_METACLASS_$_NSWindow", referenced from:
+      _OBJC_METACLASS_$_GLFWWindow in libglfw3.a(cocoa_window.m.o)
+  "___CFConstantStringClassReference", referenced from:
+      CFString in libglfw3.a(cocoa_window.m.o)
+      CFString in libglfw3.a(cocoa_window.m.o)
+      CFString in libglfw3.a(cocoa_window.m.o)
+      CFString in libglfw3.a(cocoa_window.m.o)
+      CFString in libglfw3.a(cocoa_window.m.o)
+      CFString in libglfw3.a(cocoa_window.m.o)
+      CFString in libglfw3.a(cocoa_window.m.o)
+      ...
+  "__objc_empty_cache", referenced from:
+      _OBJC_CLASS_$_GLFWWindowDelegate in libglfw3.a(cocoa_window.m.o)
+      _OBJC_METACLASS_$_GLFWWindowDelegate in libglfw3.a(cocoa_window.m.o)
+      _OBJC_METACLASS_$_GLFWApplicationDelegate in libglfw3.a(cocoa_window.m.o)
+      _OBJC_CLASS_$_GLFWApplicationDelegate in libglfw3.a(cocoa_window.m.o)
+      _OBJC_CLASS_$_GLFWContentView in libglfw3.a(cocoa_window.m.o)
+      _OBJC_METACLASS_$_GLFWContentView in libglfw3.a(cocoa_window.m.o)
+      _OBJC_METACLASS_$_GLFWWindow in libglfw3.a(cocoa_window.m.o)
+      ...
+  "_glClear", referenced from:
+      _glfwCreateWindow in libglfw3.a(window.c.o)
+  "_glGetIntegerv", referenced from:
+      __glfwRefreshContextAttribs in libglfw3.a(context.c.o)
+      _glfwExtensionSupported in libglfw3.a(context.c.o)
+  "_glGetString", referenced from:
+      _parseGLVersion in libglfw3.a(context.c.o)
+      _glfwExtensionSupported in libglfw3.a(context.c.o)
+  "_kCFAllocatorDefault", referenced from:
+      __glfwPlatformGetProcAddress in libglfw3.a(nsgl_context.m.o)
+      __glfwInitJoysticks in libglfw3.a(cocoa_joystick.m.o)
+  "_objc_alloc", referenced from:
+      +[GLFWContentView initialize] in libglfw3.a(cocoa_window.m.o)
+      -[GLFWContentView updateTrackingAreas] in libglfw3.a(cocoa_window.m.o)
+      __glfwPlatformCreateWindow in libglfw3.a(cocoa_window.m.o)
+      _createWindow in libglfw3.a(cocoa_window.m.o)
+      _createMenuBar in libglfw3.a(cocoa_window.m.o)
+      __glfwCreateContext in libglfw3.a(nsgl_context.m.o)
+  "_objc_alloc_init", referenced from:
+      __glfwPlatformCreateWindow in libglfw3.a(cocoa_window.m.o)
+      __glfwPlatformPollEvents in libglfw3.a(cocoa_window.m.o)
+      _createMenuBar in libglfw3.a(cocoa_window.m.o)
+      __glfwPlatformInit in libglfw3.a(cocoa_init.m.o)
+  "_objc_msgSendSuper2", referenced from:
+      -[GLFWWindowDelegate initWithGlfwWindow:] in libglfw3.a(cocoa_window.m.o)
+      -[GLFWContentView initWithGlfwWindow:] in libglfw3.a(cocoa_window.m.o)
+      -[GLFWContentView dealloc] in libglfw3.a(cocoa_window.m.o)
+      -[GLFWContentView updateTrackingAreas] in libglfw3.a(cocoa_window.m.o)
+      -[GLFWApplication sendEvent:] in libglfw3.a(cocoa_window.m.o)
+  "_objc_opt_class", referenced from:
+      +[GLFWContentView initialize] in libglfw3.a(cocoa_window.m.o)
+      _findAppName in libglfw3.a(cocoa_window.m.o)
+  "_objc_opt_isKindOfClass", referenced from:
+      _findAppName in libglfw3.a(cocoa_window.m.o)
+  "_objc_release", referenced from:
+      +[GLFWContentView initialize] in libglfw3.a(cocoa_window.m.o)
+      -[GLFWContentView dealloc] in libglfw3.a(cocoa_window.m.o)
+      -[GLFWContentView updateTrackingAreas] in libglfw3.a(cocoa_window.m.o)
+      __glfwPlatformDestroyWindow in libglfw3.a(cocoa_window.m.o)
+      __glfwDestroyContext in libglfw3.a(nsgl_context.m.o)
+      __glfwPlatformTerminate in libglfw3.a(cocoa_init.m.o)
+ld: symbol(s) not found for architecture arm64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+
+2022-12-15 18:09:16
+main.c:4:10: fatal error: 'glad/gl.h' file not found
+#include <glad/gl.h>
+         ^~~~~~~~~~~
+1 error generated.
+
+2022-12-16 17:03:19
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-16 17:13:02
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-16 17:19:57
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-16 17:20:30
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-16 17:22:05
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-16 17:30:18
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-16 17:31:05
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-17 19:52:15
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-17 19:56:55
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-17 19:57:19
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-17 20:02:34
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-17 20:03:24
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-17 20:11:45
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-17 20:13:14
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-17 20:13:48
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-17 20:23:22
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 10:36:46
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 10:37:07
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 10:37:38
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 10:52:09
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 10:57:51
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 11:00:02
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 11:02:05
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 11:03:05
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 11:03:27
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 11:12:33
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 11:13:08
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 11:13:44
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 11:14:12
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2022-12-18 11:20:12
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 11:09:33
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 11:24:07
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 11:24:25
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 12:09:14
+cc -std=c99 -Wall -Wextra -c -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 12:19:38
+cc -std=c99 -Wall -Wextra -c -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 12:21:25
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 12:22:31
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 12:26:27
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 12:30:07
+cc -std=c99 -Wall -Wextra =L/Users/dummdevka/c/game/code/common/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 12:30:53
+cc -std=c99 -Wall -Wextra =L/common/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 12:33:49
+cc -std=c99 -Wall -Wextra L=/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 12:34:33
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW shader.o -framework OpenGL
+
+2023-01-12 12:36:06
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW common/shader.o -framework OpenGL
+
+2023-01-12 12:36:50
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW common/shader.o -framework OpenGL
+
+2023-01-12 12:50:48
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -L/common/shader.o -lshader -framework OpenGL
+
+2023-01-12 12:51:39
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -L/common/shader.o -lshader -framework OpenGL
+
+2023-01-12 12:52:03
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -L/common/libshader.o -lshader -framework OpenGL
+
+2023-01-12 12:54:26
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -Lcommon/libshader.o -lshader -framework OpenGL
+
+2023-01-12 12:55:01
+cc -std=c99 -Wall -Wextra -g -o comp main.c -lglut -lglfw -lGLEW -Lcommon -lshader -framework OpenGL
+
+2023-01-12 14:32:59
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 14:35:29
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 14:38:12
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 14:39:04
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 14:39:46
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 14:40:41
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 14:45:04
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 14:49:06
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:02:01
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:05:55
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:06:16
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:17:29
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:19:13
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:20:25
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:20:43
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:21:50
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:22:47
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:23:49
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:24:27
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:36:43
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:37:31
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 15:54:08
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 16:04:54
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 16:05:33
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 16:06:04
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 16:07:13
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 16:07:38
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 16:08:15
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 16:08:53
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
+
+2023-01-12 16:09:02
+cc -std=c99 -Wall -Wextra common/libs/shader.o -g -o comp main.c -lglut -lglfw -lGLEW -framework OpenGL
